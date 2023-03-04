@@ -3,7 +3,9 @@ pipeline {
 	stages {
 		stage ('Clone Git') {
 			steps {
-				sh "git pull 'https://github.com/Kshitijashah25/Jenkins.git'"
+				git url : 'https://github.com/Kshitijashah25/Jenkins.git',
+				branch : 'main',
+				credentialsId : 'GitCredential'
 			}
 		}
 		stage ('Build Code') {
