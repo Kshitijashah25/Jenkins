@@ -1,0 +1,2 @@
+print("Now checking if jenkins is being build when pushing the code the ")
+print("Jenkins with Git")
