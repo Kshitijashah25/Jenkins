@@ -12,4 +12,4 @@ class TestSum(unittest.TestCase):
     self.assertEqual(result,55)
     
 if __name__ == '__main__':
-  unittest.main()
+    unittest.main()
